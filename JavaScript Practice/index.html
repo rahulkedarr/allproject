@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+          <legend>Data</legend>
+          <div>
+              <h3>Personal Details</h3>
+              <div>
+                  <label for="1">Name:</label>
+                  <input type="text" name="name" placeholder="enter name here" id="1" />
+              </div>
+              <br />
+              <div>
+                  <label for="2">Password:</label>
+                  <input type="password" name="password" id="2" />
+              </div>
+              <br />
+              <div>
+                  <label for="3">Email id:</label>
+                  <input type="email" name="emailid" id="3" required placeholder="enter email" />
+              </div>
+              <br />
+              <div>
+                  <label>Gender:</label>
+                  <input type="radio" value="male" name="gender" id="4" />
+                  <label for="4">Male</label>
+
+                  <input type="radio" value="female" name="gender" id="5" />
+                  <label for="5">Female</label>
+
+                  <input type="radio" value="transgender" name="gender" id="6" />
+                  <label for="6">Transgender</label>
+              </div>
+              <br />
+              <div>
+                  <label for="7">Contact:</label>
+                  <input type="tel" maxlength="10" required name="contactnumber" id="7" />
+              </div>
+              <br>
+              <div style="display: flex; justify-content: flex-start;">
+                  <label for="12">Address:</label>
+                  <textarea name="address" id="12" cols="30" rows="5" placeholder="enter address"></textarea>
+              </div>
+              <br>
+              <div>
+                  <label for="14">Age</label>
+                  <input type="number" min="18" max="30">
+              </div>
+          </div>
+          <div>
+              <h3>Educational Details</h3>
+              <div>
+                  <label>Degree:</label>
+                  <select name="degree">
+                      <optgroup label=" Engineering">
+                          <option value="automobile engineering">
+                              automobile engineering
+                          </option>
+                          <option value="extc engineering">extc engineering</option>
+                          <option value="electrical engineering">
+                              electrical engineering
+                          </option>
+                          <option value="civil engineering">civil engineering</option>
+                          <option value="mechanical engineering">
+                              mechanical engineering
+                          </option>
+                          <option value="computer science engineering">
+                              computer science engineering
+                          </option>
+                      </optgroup>
+                      <optgroup label="Other">
+                          <option value="pharmacy">pharmacy</option>
+                          <option value="law">law</option>
+                          <option value="commerce">commerce</option>
+                          <option value="arts">arts</option>
+                          <option value="science">science</option>
+                      </optgroup>
+                  </select>
+              </div>
+              <br />
+              <div>
+                  <label>Hobbies:</label>
+
+                  <input type="checkbox" value="playing chess" name="hobbies" id="8" />
+                  <label for="8">Playing chess</label>
+
+                  <input type="checkbox" value="listning music" name="hobbies" id="9" />
+                  <label for="9">Listning Music</label>
+
+                  <input type="checkbox" value="reading books" name="hobbies" id="10" />
+                  <label for="10">Reading Books</label>
+
+                  <input type="checkbox" value="singing" name="hobbies" id="11" />
+                  <label for="11">Singing</label>
+              </div>
+              <br />
+              <div>
+                  <label for="13">Attach Resume: </label>
+                  <input type="file" name="resume" id="13" />
+              </div>
+              <br />
+              <div>
+                  <input type="submit" value="send" />
+                  <input type="reset" value="reset" />
+              </div>
+          </div>
+      </fieldset>
+  </form>
+<div>
+  <div class="sss">
+    <button id="click">click me</button>
+  </div>
+  <div class="sss">
+    <button id="click">up</button>
+  </div>
+
+  <script src="/JavaScript Practice/vanilla.js"></script>
+  </body>
+</html>

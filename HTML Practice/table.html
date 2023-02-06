@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border:1px solid black; 
+            padding: 15px; 
+            text-align: center;
+            border-collapse: collapse;
+            
+        }
+        
+        </style>
+</head>
+<body>
+    <h2>level easy table</h2>
+    <table   >
+        <caption>test table with merged cells</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">average</th>
+                <th rowspan="2">red eyes</th>
+            </tr>
+            <tr>
+                <th>height</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>male</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>female</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>level midium table</h2>
+    <table>
+        <caption>level midium</caption> 
+        <thead>
+            <tr>
+                <th rowspan="3">day</th>
+                <th colspan="3">seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">schedule</th>
+                <th rowspan="2">topic</th>
+            </tr>
+            <tr>
+                <th>begin</th>
+                <th>end</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">monday</th>
+                <td rowspan="2">5:00pm</td>
+                <td rowspan="2">7:00pm</td>
+                <td>indroduction to xml</td>
+            </tr>
+            <tr>
+                <td>validity: dtd and relax ng</td>
+            </tr>
+            <tr>
+                <td rowspan="3">tuesday</td>
+                <td>8:00pm</td>
+                <td>11:00pm</td>
+                <!-- <td>xpath</td> -->
+            </tr>
+            <tr>
+                <td>11:00pm</td>
+                <td>2:00pm</td>
+                <!-- <td>xsl transformation</td> -->
+            </tr>
+            <tr>
+                <td>2:00pm</td>
+                <td>5:00pm</td>
+                
+            </tr>
+            <tr>
+                <td>wendesday</td>
+                <td>8:00pm</td>
+                <td>12:00pm</td>
+                <td>xsl formatting object</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>hard level table</h2>
+    <table>
+        <caption>TIME TABLE</caption>
+        <thead>
+            <tr>
+                <th>Day/Period</th>
+                <th>I 9:30-10:20</th>
+                <th>II 10:20-11:10</th>
+                <th>III 11:10-12:00</th>
+                <th>12:00-12:40</th>
+                <th>IV 12:40-1:30</th>
+                <th>V 1:30-2:20</th>
+                <th>VI 2:20-3:10</th>
+                <th>VII 3:10-4:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>monday</th>
+                <td>marathi</td>
+                <td>english</td>
+                <td>physics</td>
+                <td rowspan="6">lunch</td>
+                <td colspan="3">lab</td>
+                <td>chemistry</td>
+            </tr>
+            <tr>
+                <th>tuesday</th>
+                <td colspan="3">lab</td>
+                <td>english</td>
+                <td>chemistry</td>
+                <td>marathi</td>
+                <td>math</td>
+            </tr>
+            <tr>
+                <th>wednesday</th>
+                <td>english</td>
+                <td>marathi</td>
+                <td>math</td>
+                <td>chemistry</td>
+                <td colspan="3">library</td>
+            </tr>
+            <tr>
+                <th>thursday</th>
+                <td>marathi</td>
+                <td>physics</td>
+                <td>english</td>
+                <td colspan="3">lab</td>
+                <td>chemistry</td>
+            </tr>
+            <tr>
+                <th>friday</th>
+                <td colspan="3">lab</td>
+                <td>physics</td>
+                <td>chemistry</td>
+                <td>english</td>
+                <td>physics</td>
+            </tr>
+            <tr>
+                <th>saturday</th>
+                <td>physics</td>
+                <td>chemistry</td>
+                <td>english</td>
+                <td colspan="3">seminar</td>
+                <td>physics</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    
+</body>
+</html>

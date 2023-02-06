@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- personal detail and educational detail -->
+    <form>
+        <fieldset>
+            <legend>Data</legend>
+            <div>
+                <h3>Personal Details</h3>
+                <div>
+                    <label for="1">Name:</label>
+                    <input type="text" name="name" placeholder="enter name here" id="1" />
+                </div>
+                <br />
+                <div>
+                    <label for="2">Password:</label>
+                    <input type="password" name="password" id="2" />
+                </div>
+                <br />
+                <div>
+                    <label for="3">Email id:</label>
+                    <input type="email" name="emailid" id="3" required placeholder="enter email" />
+                </div>
+                <br />
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" value="male" name="gender" id="4" />
+                    <label for="4">Male</label>
+
+                    <input type="radio" value="female" name="gender" id="5" />
+                    <label for="5">Female</label>
+
+                    <input type="radio" value="transgender" name="gender" id="6" />
+                    <label for="6">Transgender</label>
+                </div>
+                <br />
+                <div>
+                    <label for="7">Contact:</label>
+                    <input type="tel" maxlength="10" required name="contactnumber" id="7" />
+                </div>
+                <br>
+                <div style="display: flex; justify-content: flex-start;">
+                    <label for="12">Address:</label>
+                    <textarea name="address" id="12" cols="30" rows="5" placeholder="enter address"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="14">Age</label>
+                    <input type="number" min="18" max="30">
+                </div>
+            </div>
+            <div>
+                <h3>Educational Details</h3>
+                <div>
+                    <label>Degree:</label>
+                    <select name="degree">
+                        <optgroup label=" Engineering">
+                            <option value="automobile engineering">
+                                automobile engineering
+                            </option>
+                            <option value="extc engineering">extc engineering</option>
+                            <option value="electrical engineering">
+                                electrical engineering
+                            </option>
+                            <option value="civil engineering">civil engineering</option>
+                            <option value="mechanical engineering">
+                                mechanical engineering
+                            </option>
+                            <option value="computer science engineering">
+                                computer science engineering
+                            </option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="pharmacy">pharmacy</option>
+                            <option value="law">law</option>
+                            <option value="commerce">commerce</option>
+                            <option value="arts">arts</option>
+                            <option value="science">science</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br />
+                <div>
+                    <label>Hobbies:</label>
+
+                    <input type="checkbox" value="playing chess" name="hobbies" id="8" />
+                    <label for="8">Playing chess</label>
+
+                    <input type="checkbox" value="listning music" name="hobbies" id="9" />
+                    <label for="9">Listning Music</label>
+
+                    <input type="checkbox" value="reading books" name="hobbies" id="10" />
+                    <label for="10">Reading Books</label>
+
+                    <input type="checkbox" value="singing" name="hobbies" id="11" />
+                    <label for="11">Singing</label>
+                </div>
+                <br />
+                <div>
+                    <label for="13">Attach Resume: </label>
+                    <input type="file" name="resume" id="13" />
+                </div>
+                <br />
+                <div>
+                    <input type="submit" value="send" />
+                    <input type="reset" value="reset" />
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <!-- payment gatway form -->
+    <form>
+        <fieldset>
+            <legend>payment gateway</legend>
+            <div>
+                <h3>Step1:your details</h3>
+                <div>
+                    <label for="p1">Name:</label>
+                    <input type="text" name="name" id="p1" placeholder="enter your name" required />
+                </div>
+                <br />
+                <div>
+                    <label for="p2">Email:</label>
+                    <input type="email" name="email" id="p2" placeholder="abx@gmail.com" required />
+                </div>
+                <br />
+                <div>
+                    <label for="p3">Mobile Number:</label>
+                    <input type="tel" name="mobile number" id="p3" placeholder="enter your mobiile number"
+                        maxlength="10" required />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div>
+                <h3>Step2:Delivery Address</h3>
+                <div style="display: flex; justify-content: flex-start;">
+                    <label for="d1">Address:</label>
+                    <textarea name="address" id="d1" cols="20" rows="5" required></textarea>
+                </div>
+                <br />
+                <div>
+                    <label for="d2">Post code:</label>
+                    <input type="tel" name="post code" maxlength="6" id="d2" required />
+                </div>
+                <br />
+                <div>
+                    <label for="d3">Country:</label>
+                    <input type="text" name="country" id="d3" required />
+                </div>
+            </div>
+            <br />
+            <br />
+            <div>
+                <h3>Item count</h3>
+                <select name="item count">
+                    <option selected>select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div>
+                <h3>Step3:Card details</h3>
+                <div>
+                    <label>Card Type:</label>
+                    <input type="radio" value="visa" name="card type" id="c1" />
+                    <label for="c1">Visa</label>
+
+                    <input type="radio" value="amex" name="card type" id="c2" />
+                    <label for="c2">AmEx</label>
+
+                    <input type="radio" value="mastercard" name="card type" id="c3" />
+                    <label for="c3">Mastercard</label>
+                </div>
+                <br />
+                <div>
+                    <label for="c4">Card number: </label>
+                    <input type="number" name="card number" id="c4" required />
+                </div>
+                <br />
+                <div>
+                    <label for="c5">Security Code:</label>
+                    <input type="number" name="security code" id="c5" />
+                </div>
+                <br />
+                <div>
+                    <label for="c6">Name on Card:</label>
+                    <input type="text" id="c6" />
+                </div>
+                <br />
+                <div>
+                    <input type="" value="Buy it" />
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

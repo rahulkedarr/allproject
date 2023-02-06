@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* this is transition */
+        .progressbar:hover {
+            width: 100vw; /*this is final value */
+        } 
+        .progressbar{
+            background-color: red;
+            height: 2px;
+            width: 10vw;  /*this is initial value*/
+        }
+        /* this is a animation tamplate */
+        /* @keyframes load {
+            0%{
+                width: 0vw;
+            }
+            50%{
+                width: 70vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        } */
+        /* .progressbar{
+            background-color: red;
+            height: 2px;
+            width: 100vw;
+            animation-name: load ;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+        } */
+        header{
+            background-color: black;
+            width: 100vw;
+            height: 20vh;
+        }
+        main{
+            background-color: blue;
+            width: 100vw;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="progressbar"></div>
+    <header>
+    </header>
+    <main>
+        
+    </main>
+</body>
+</html>

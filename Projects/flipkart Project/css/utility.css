@@ -1,0 +1,14 @@
+.flexall-canter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.my2{
+    margin: 12px 0px;
+}
+.my1{
+    margin: 5px 0px;
+}
